@@ -45,6 +45,11 @@ hfcl,ion4xi_w)
 	ucidef_set_led_wlan "wlan5g" "WLAN5G" "blue:wifi5" "phy0tpt"
 	ucidef_set_led_wlan "wlan2g" "WLAN2G" "blue:wifi2" "phy1tpt"
 	;;
+liteon,wpx8324)
+	ucidef_set_led_wlan "wlan2g" "WLAN2G" "orange:wifi2" "phy0tpt"
+	ucidef_set_led_wlan "wlan5g" "WLAN5G" "green:wifi5" "phy1tpt"
+	ucidef_set_led_netdev "wan" "wan" "blue:uplink" "eth0"
+	;;
 yuncore,fap650|\
 yuncore,fap655)
 	ucidef_set_led_wlan "wlan2g" "WLAN2G" "green:wifi2" "phy0tpt"
