@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include "qcom-ipq5018.dtsi"
+#include "ipq5018.dtsi"
 
 / {
 	#address-cells = <0x2>;
