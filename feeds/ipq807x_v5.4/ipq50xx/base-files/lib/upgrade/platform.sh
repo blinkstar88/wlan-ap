@@ -84,6 +84,7 @@ platform_check_image() {
 	optimcloud,d50|\
 	optimcloud,d50-5g|\
 	yuncore,fap655|\
+ liteon,wpx8324|\
 	glinet,b3000|\
 	udaya,a6-id2|\
 	udaya,a6-od2|\
