@@ -584,20 +584,20 @@
 			bias-pull-down;
 		};
 	};
-	pwm_pins: pwm_pinmux {
-		mux_1 {
-			pins = "gpio30";
-			function = "pwm3";
+ leds_pins: leds_pins {
+		led_blue {
+			pins = "gpio19";
+			function = "gpio";
 			drive-strength = <8>;
 		};
-		mux_2 {
-			pins = "gpio36";
-			function = "pwm1";
+		led_orange {
+			pins = "gpio18";
+			function = "gpio";
 			drive-strength = <8>;
 		};
-		mux_3 {
-			pins = "gpio37";
-			function = "pwm2";
+		led_green {
+			pins = "gpio39";
+			function = "gpio";
 			drive-strength = <8>;
 		};
 	};
@@ -631,7 +631,7 @@
    default-state = "off";
 		};
 
-		led_blue: led@39 {
+		led_green: led@39 {
 			label = "green:wifi5";
 			gpios = <&tlmm 39 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "orange-on";
