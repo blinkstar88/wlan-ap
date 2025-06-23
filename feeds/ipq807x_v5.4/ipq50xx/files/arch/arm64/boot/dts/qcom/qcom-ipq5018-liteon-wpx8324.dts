@@ -617,24 +617,24 @@
 		compatible = "pwm-leds";
 
 		red {
-			label = "pwm:red";
-			pwms = <&pwm 1 1250000>;
-			max-brightness = <1>;
-			linux,default-trigger = "none";
+			label = "red:status";
+			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "red-on";
+   default-state = "off";
 		};
 
 		green {
-			label = "pwm:green";
-			pwms = <&pwm 2 1250000>;
-			max-brightness = <1>;
-			linux,default-trigger = "none";
+			label = "green:status";
+			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "green-on";
+   default-state = "off";
 		};
 
 		led_blue: blue {
-			label = "pwm:blue";
-			pwms = <&pwm 3 1250000>;
-			max-brightness = <1>;
-			linux,default-trigger = "timer";
+			label = "blue:status";
+			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "blue-on";
+   default-state = "off";
 		};
 	};
 	gpio_keys {
