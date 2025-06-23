@@ -617,24 +617,24 @@
   pinctrl-0 = <&leds_pins>;
   pinctrl-names = "default";
 
-		red {
-			label = "red:status";
-			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "red-on";
-   default-state = "off";
-		};
-
-		green {
-			label = "green:status";
-			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "green-on";
-   default-state = "off";
-		};
-
-		led_blue: blue {
-			label = "blue:status";
-			gpios = <&tlmm 1 GPIO_ACTIVE_HIGH>;
+		led_blue: led@19 {
+			label = "blue:uplink";
+			gpios = <&tlmm 19 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "blue-on";
+   default-state = "off";
+		};
+
+		led_orange: led@18 {
+			label = "orange:wifi2";
+			gpios = <&tlmm 18 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "orange-on";
+   default-state = "off";
+		};
+
+		led_blue: led@39 {
+			label = "green:wifi5";
+			gpios = <&tlmm 39 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "orange-on";
    default-state = "off";
 		};
 	};
