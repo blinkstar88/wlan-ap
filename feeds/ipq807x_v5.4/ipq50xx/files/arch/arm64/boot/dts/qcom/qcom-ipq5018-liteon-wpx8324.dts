@@ -612,9 +612,10 @@
 			status = "disabled";
 		};
 
-	/* Use PWM LED driver to control LED through PWM, make sure CONFIG_LEDS_PWM is enabled */
-	pwmleds {
-		compatible = "pwm-leds";
+	leds {
+		compatible = "gpio-leds";
+  pinctrl-0 = <&leds_pins>;
+  pinctrl-names = "default";
 
 		red {
 			label = "red:status";
